@@ -5,7 +5,6 @@ import telegram
 import schedule
 import time
 import os
-import os
 from dotenv import load_dotenv
 
 load_dotenv()

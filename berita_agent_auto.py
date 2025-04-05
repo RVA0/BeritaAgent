@@ -7,6 +7,13 @@ import time
 import os
 from dotenv import load_dotenv
 
+def start_bot():
+    bot = telegram.Bot(token=os.getenv("BOT_TOKEN"))
+    bot.send_message(chat_id=os.getenv("CHAT_ID"), text="Halo dari bot!")
+
+if __name__ == "__main__":
+    start_bot()
+    
 load_dotenv()
 
 # ========== SETUP ==========
